@@ -1,5 +1,5 @@
 import { XMLParser, XMLBuilder } from 'fast-xml-parser';
-import { 
+import {
   getSourceSitemapUrl,
   getUrlsToRemove,
   getUrlsToAdd,
@@ -10,7 +10,6 @@ import {
 
 export type UrlEntry = { loc: string } & Record<string, any>;
 
-// One configured parser instance for both routes
 export const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: "@_",
@@ -20,7 +19,6 @@ export const parser = new XMLParser({
   isArray: (name, jpath) => jpath === 'urlset.url'
 });
 
-// One builder instance for pretty output
 export const builder = new XMLBuilder({
   ignoreAttributes: false,
   attributeNamePrefix: "@_",
@@ -53,7 +51,7 @@ export async function fetchAndParseSource(sourceSitemapUrl: string) {
 export function preserveUrlsetAttrs(urlset: any): Record<string, string> {
   return Object.fromEntries(
     Object.entries(urlset)
-      .filter(([key]) => key.startsWith('@_'))
+      .filter(([key]) => key.startsWith('@_') && key !== '@_xmlns:xhtml')
       .map(([key, value]) => [key, String(value)])
   );
 }
@@ -98,7 +96,8 @@ export function applyDomainReplace(urls: UrlEntry[], origin: string, replacement
 }
 
 export function buildUrlsetXml(urls: UrlEntry[], attrs?: Record<string, string>): string {
-  const object = { urlset: { ...(attrs || {}), url: urls } };
+  const cleanedUrls = urls.map(entry => ({ loc: entry.loc }));
+  const object = { urlset: { ...(attrs || {}), url: cleanedUrls } };
   return builder.build(object);
 }
 
