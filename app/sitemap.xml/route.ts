@@ -10,7 +10,7 @@ import {
     buildSitemapIndexXml,
     computeChunks
 } from './utils';
-import config from '@/next.config';
+const config = { basePath: process.env.BASE_PATH === 'root' ? '' : (process.env.BASE_PATH ?? '/config') };
 
 export async function GET(request: NextRequest) {
     try {
