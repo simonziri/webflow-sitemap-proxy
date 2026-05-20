@@ -6,8 +6,6 @@ const urlsToRemove: string[] = [
     "/info/**",
     "/de/info/**",
     "/de/walkthrough/**",
-    "/solutions/**",
-    "/de/solutions/**",
     "/best/**",
     "/de/best/**",
     "/thank-you",
