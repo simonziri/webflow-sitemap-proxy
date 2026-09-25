@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <url>
+    <loc>https://www.leapsome.com/blog/one-on-one-meeting-template</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/aRLrGSaMeY0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Three one-on-one meeting templates, and how to put them into action</video:title>
+      <video:description>These one-on-one meeting templates help you turn improvised chaos into structured feedback opportunities and keep all your conversations on track.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/aRLrGSaMeY0</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.leapsome.com/blog/areas-of-improvement-performance-review-examples</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Mxfvmh4V3GQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>6 examples of areas of improvement at work for performance reviews in 2026</video:title>
+      <video:description>Explore 6 examples of areas of improvement at work and help managers deliver clearer performance reviews to support employee growth.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Mxfvmh4V3GQ</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.leapsome.com/blog/workplace-goals-examples</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/u48VhzysYuE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>How to set workplace goals that support career advancement: tips + examples</video:title>
+      <video:description>Explore nine examples of specific, actionable workplace goals, and learn some best practices for setting effective objectives in a professional environment.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/u48VhzysYuE</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.leapsome.com/blog/performance-review-questions</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/awomWJFQT9c/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>38 performance review questions to run better reviews</video:title>
+      <video:description>Discover 38 effective performance review questions, plus best practices and tips to help employees, managers, and HR leaders run more impactful reviews.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/awomWJFQT9c</video:player_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+
+</urlset>
